@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-900 font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-neutral-900;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-200 inline-flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-50;
+  }
+
+  .card {
+    @apply bg-white rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .container {
+    @apply px-4 md:px-6 mx-auto max-w-7xl;
+  }
+
+  .pizza-card {
+    @apply card p-4 flex flex-col items-center text-center;
+  }
+
+  .pizza-img {
+    @apply transition-all duration-300 hover:scale-105;
+  }
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
