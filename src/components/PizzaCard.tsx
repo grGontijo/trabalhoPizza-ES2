@@ -53,6 +53,7 @@ const PizzaCard: React.FC<PizzaCardProps> = ({ pizza, index }) => {
         <span className="text-sm text-neutral-600">{pizza.category}</span>
       </div>
       
+      
       <p className="text-neutral-600 text-sm mb-4 line-clamp-2">{pizza.description}</p>
       
       <div className="mt-auto flex items-center justify-between w-full">

@@ -13,6 +13,7 @@ export interface Pizza {
     ratingCount: number;
   }
   
+  
   export interface Category {
     id: string;
     name: string;

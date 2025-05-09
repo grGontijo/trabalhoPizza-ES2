@@ -136,7 +136,7 @@ const NavLink = ({ to, label }: { to: string; label: string }) => {
   );
 };
 
-// Mobile NavLink component
+
 const MobileNavLink = ({ to, label }: { to: string; label: string }) => {
   const location = useLocation();
   const isActive = location.pathname === to;

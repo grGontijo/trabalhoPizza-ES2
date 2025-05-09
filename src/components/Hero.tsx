@@ -132,7 +132,7 @@ const Hero = () => {
               className="absolute bottom-1/4 -right-12 bg-primary-50 rounded-lg shadow-lg p-3"
               animate={{ x: [0, 8, 0] }}
               transition={{ repeat: Infinity, duration: 3 }}
-            >
+            > 
               <div className="flex items-center gap-2">
                 <div className="bg-primary-500 text-white p-2 rounded-md">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

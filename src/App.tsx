@@ -24,6 +24,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  
   if (isLoading) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-white">

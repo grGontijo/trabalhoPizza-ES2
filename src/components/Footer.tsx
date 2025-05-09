@@ -85,6 +85,7 @@ const Footer = () => {
   );
 };
 
+
 const SocialLink: React.FC<{ icon: React.ReactNode; href: string }> = ({ icon, href }) => {
   return (
     <a

@@ -140,7 +140,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const clearCart = () => {
     dispatch({ type: 'CLEAR_CART' });
-  };
+  }; 
 
   return (
     <CartContext.Provider

@@ -138,7 +138,6 @@ public class PizzaDeliveryApplication {
     }
 }
 
-// Pizza Model
 @Entity
 public class Pizza {
     @Id
@@ -156,10 +155,9 @@ public class Pizza {
     private double rating;
     private int ratingCount;
     
-    // Getters and setters
+
 }
 
-// Order Model
 @Entity
 public class Order {
     @Id
@@ -173,8 +171,7 @@ public class Order {
     private LocalDateTime createdAt;
     private String address;
     private String paymentMethod;
-    
-    // Getters and setters
+ 
 }
 
 @Entity
@@ -186,7 +183,6 @@ public class OrderItem {
     private int quantity;
     private double price;
     
-    // Getters and setters
 }
 
 // Pizza Controller
@@ -209,7 +205,7 @@ public class PizzaController {
     }
 }
 
-// Order Controller
+
 @RestController
 @RequestMapping("/api/orders")
 public class OrderController {
@@ -241,16 +237,8 @@ public class OrderController {
                 .sum();
     }
 }
-```
 
-## Integration with Frontend
 
-To connect the React frontend with either backend:
-
-1. Update the API calls in the frontend to use the backend endpoints:
-
-```javascript
-// src/api/index.ts
 import axios from 'axios';
 
 const API_URL = 'http://localhost:8000/api';
@@ -274,6 +262,3 @@ export const getUserOrders = async (userId: string) => {
   const response = await axios.get(`${API_URL}/orders/user/${userId}`);
   return response.data;
 };
-```
-
-2. Then use these functions in the appropriate components to fetch data from the backend.
